@@ -5,4 +5,7 @@ class Parking < ApplicationRecord
     in_progress: 0,
     finished: 1
   }
+
+  validates :plate, presence: true
+  validates_format_of :plate, with: /\A\w{3}\-\d{4}\z/
 end
