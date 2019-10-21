@@ -3,6 +3,7 @@ class CreateParkings < ActiveRecord::Migration[6.0]
     create_table :parkings do |t|
       t.string :plate, index: true
       t.integer :status, limit: 2
+      t.datetime :finished_at
       t.timestamps
     end
   end

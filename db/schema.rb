@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2019_10_20_232753) do
   create_table "parkings", force: :cascade do |t|
     t.string "plate"
     t.integer "status", limit: 2
+    t.datetime "finished_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["plate"], name: "index_parkings_on_plate"
