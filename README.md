@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a rails api application, to run execute:
 
-Things you may want to cover:
+* bundle install
 
-* Ruby version
+* rails db:create db:migrate
 
-* System dependencies
+To run the tests use:
+* rspec
 
-* Configuration
+## About the code
 
-* Database creation
+The controllers were designed to follow the default five REST routes.
+Instead of adding a method on a controller that’s not part of the default five REST actions that we have by default, we make a new controller!
 
-* Database initialization
+More details about this design here: http://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/ 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
