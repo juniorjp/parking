@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe V1::Parkings::OutController, type: :controller do
-  describe "PUT #update" do
+  describe 'PUT #update' do
     let(:parking) { create :parking, status: :in_progress }
-    it "returns http success" do
+    it 'returns http success' do
       @request.headers['api_version'] = 'v1'
 
       #first attempt without paying
